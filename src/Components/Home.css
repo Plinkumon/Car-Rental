@@ -1,0 +1,98 @@
+.home {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #f3f6ff;
+  padding: 40px;
+  border-radius: 10px;
+  background-image: url('./car1.jpg');
+  background-size: cover;
+  height: 50vh;
+  background-position: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.hero-btn:hover {
+  background: #0056d4;
+}
+
+.hero-img img {
+  width: 400px;
+}
+
+/* FEATURES */
+.features {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.feature {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feature img {
+  width: 200px;
+  height: 150px;
+}
+
+/* POPULAR CARS */
+.cars {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.car-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.car-card {
+  width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+height: 250px;
+}
