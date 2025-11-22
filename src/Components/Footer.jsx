@@ -24,7 +24,7 @@ function Footer() {
         <div>
           <h4>Contact</h4>
           <p>Email: support@rentmyride.com</p>
-          <p>Phone: +1 202 555 0147</p>
+          <p>Phone: +91 1234567890</p>
         </div>
 
       </div>

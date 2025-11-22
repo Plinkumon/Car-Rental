@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home">
       
-      {/* HERO SECTION */}
+     
       <section className="hero">
         <div className="hero-text">
           <h1>Find Your Perfect Ride</h1>
@@ -16,7 +16,7 @@ function Home() {
         
       </section>
 
-      {/* FEATURES */}
+      
       <section className="features">
         <h2>Why Choose Us?</h2>
         <div className="feature-boxes">
@@ -42,7 +42,7 @@ function Home() {
         </div>
       </section>
 
-      {/* POPULAR CARS */}
+   
       <section className="cars">
         <h2>Popular Cars</h2>
         <div className="car-grid">
@@ -50,19 +50,19 @@ function Home() {
           <div className="car-card">
             <img src="/Toyota.jpg" alt="car" />
             <h3>Toyota Camry</h3>
-            <p>400/day</p>
+            <p>₹400/day</p>
           </div>
 
           <div className="car-card">
             <img src="/HondaElevate10.jpg" alt="car" />
             <h3>Honda Elevate</h3>
-            <p>$4000/day</p>
+            <p>₹4000/day</p>
           </div>
 
           <div className="car-card">
             <img src="/bmw8.jpg" alt="car" />
             <h3>BMW 8 Series</h3>
-            <p>12000/day</p>
+            <p>₹12000/day</p>
           </div>
 
         </div>
