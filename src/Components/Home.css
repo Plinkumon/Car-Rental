@@ -12,7 +12,7 @@
   color: #f3f6ff;
   padding: 40px;
   border-radius: 10px;
-  background-image: url('./car1.jpg');
+  background-image: url('../car1.jpg');
   background-size: cover;
   height: 50vh;
   background-position: center;
