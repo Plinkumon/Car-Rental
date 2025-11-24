@@ -1,13 +1,14 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home'
-import Navbar from './Components/Navbar'
-import Footer from './Components/Footer'
+import Navbar1 from './Components/Navbar'
+
 
 
 function App() {
   return (
     <div>
-      
+      <Navbar1/>
 
 <Home/>
     </div>

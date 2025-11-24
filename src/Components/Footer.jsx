@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-content">
         
         <div>
-          <h3>RentMyRide</h3>
+          <h3>AutoRentz</h3>
           <p>Fast • Affordable • Reliable Car Rentals</p>
         </div>
 
@@ -23,14 +23,14 @@ function Footer() {
 
         <div>
           <h4>Contact</h4>
-          <p>Email: support@rentmyride.com</p>
+          <p>Email: support@autorentz.com</p>
           <p>Phone: +91 1234567890</p>
         </div>
 
       </div>
 
       <p className="footer-bottom">
-        © {new Date().getFullYear()} RentMyRide — All Rights Reserved
+        © {new Date().getFullYear()} AutoRentz — All Rights Reserved
       </p>
     </footer>
   );

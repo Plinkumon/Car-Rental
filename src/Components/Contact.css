@@ -1,0 +1,109 @@
+.contact-container {
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('/car1.jpg') center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.contact-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.contact-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+}
+
+.contact-content {
+  display: flex;
+  padding: 50px 8%;
+  gap: 40px;
+}
+
+/* Contact Info */
+.contact-info {
+  width: 40%;
+  line-height: 1.8;
+}
+
+.contact-info h2, 
+.contact-info h3 {
+  color: #d4af37;
+}
+
+/* Form */
+.contact-form {
+  width: 60%;
+}
+
+.contact-form h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Map */
+.contact-map {
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+.thank-you {
+  margin-top: 20px;
+  color: #d4af37;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
