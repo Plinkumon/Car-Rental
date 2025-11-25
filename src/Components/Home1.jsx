@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar1 from "./Navbar";
 import './Home1.css'
+import { Link } from "react-router-dom";
 
 
 function Home1() {
@@ -46,8 +47,10 @@ function Home1() {
             fontSize: "1rem",
             cursor: "pointer",
           }}
-        >
-          Book Now
+        > <Link to="/Booking" style={{textDecoration:'none',color: 'black'}} >
+                  Book Now
+                   </Link>
+          
         </button>
       </div>
     </div>

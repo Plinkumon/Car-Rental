@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -15,6 +16,9 @@ function Contact() {
       <div className="contact-header">
         <h1>Contact Us</h1>
         <p>Your luxury travel experience begins here.</p>
+        <Link to="/home">
+          Back to Home
+       </Link>
       </div>
 
       <div className="contact-content">

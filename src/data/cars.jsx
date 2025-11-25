@@ -16,7 +16,7 @@ const cars = [
     fuel: "Petrol",
     seats: 5,
     pricePerDay: 2500,
-    image: "/cars/honda-city.jpg",
+    image: "/cars/hondacity.jpg",
     transmission: "Manual"
   },
   {
@@ -32,13 +32,174 @@ const cars = [
   {
     id: 4,
     name: "Tesla Model 3",
-    type: "Electric",
+    type: "luxury",
     fuel: "Electric",
     seats: 5,
     pricePerDay: 5000,
     image: "/cars/tesla.jpg",
     transmission: "Automatic"
-  }
+  },
+  {
+    id: 5,
+    name: "BMW 7 Series",
+    type: "luxury",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 8500,
+    image: "/cars/bmw7.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 6,
+    name: "Mercedes S-Class",
+    type: "luxury",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 9000,
+    image: "/cars/sclass.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 7,
+    name: "Audi A8",
+    type: "luxury",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 8200,
+    image: "/cars/a8.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 8,
+    name: "Range Rover Vogue",
+    type: "suv",
+    fuel: "Diesel",
+    seats: 7,
+    pricePerDay: 7500,
+    image: "/cars/rangevogue.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 9,
+    name: "Toyota Fortuner",
+    type: "suv",
+    fuel: "Diesel",
+    seats: 7,
+    pricePerDay: 4000,
+    image: "/cars/fortuner.jpg",
+    transmission: "Manual"
+},
+{
+    id: 10,
+    name: "Mahindra XUV700",
+    type: "suv",
+    fuel: "Diesel",
+    seats: 7,
+    pricePerDay: 3500,
+    image: "/cars/xuv700.png",
+    transmission: "Automatic"
+},
+{
+    id: 11,
+    name: "Honda Elevate",
+    type: "sedan",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 1800,
+    image: "/cars/elevate.jpg",
+    transmission: "Manual"
+},
+{
+    id: 12,
+    name: "Hyundai Verna",
+    type: "sedan",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 2000,
+    image: "/cars/verna.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 13,
+    name: "Skoda Superb",
+    type: "sedan",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 2600,
+    image: "/cars/superb.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 14,
+    name: "Porsche 911 Carrera",
+    type: "sports",
+    fuel: "Petrol",
+    seats: 2,
+    pricePerDay: 15000,
+    image: "/cars/porsche911.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 15,
+    name: "Nissan GTR",
+    type: "sports",
+    fuel: "Petrol",
+    seats: 2,
+    pricePerDay: 18000,
+    image: "/cars/gtr.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 16,
+    name: "Ford Mustang GT",
+    type: "sports",
+    fuel: "Petrol",
+    seats: 4,
+    pricePerDay: 12000,
+    image: "/cars/mustang.jpeg",
+    transmission: "Manual"
+},
+{
+    id: 17,
+    name: "Kia Seltos",
+    type: "suv",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 2200,
+    image: "/cars/seltos.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 18,
+    name: "Maruti Suzuki Baleno",
+    type: "hatchback",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 1200,
+    image: "/cars/baleno.jpg",
+    transmission: "Manual"
+},
+{
+    id: 19,
+    name: "Mini Cooper S",
+    type: "premium",
+    fuel: "Petrol",
+    seats: 4,
+    pricePerDay: 7000,
+    image: "/cars/minicooper.jpg",
+    transmission: "Automatic"
+},
+{
+    id: 20,
+    name: "Jaguar XF",
+    type: "luxury",
+    fuel: "Petrol",
+    seats: 5,
+    pricePerDay: 7800,
+    image: "/cars/jaguarxf.jpeg",
+    transmission: "Automatic"
+}
+
 ];
 
 export default cars;

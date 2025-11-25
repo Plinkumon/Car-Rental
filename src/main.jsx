@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import cars from "./data/cars.jsx";
+
 import Root from "./Routes/Root"
 import ErrorPage from "./error-page";
 import About from "./Components/About.jsx";
@@ -15,6 +15,8 @@ import Contact from "./Components/Contact.jsx";
 import Indcar from "./Components/Indcar.jsx";
 import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
+import Booking from "./Components/Booking.jsx";
+import Cardata from "./Components/Cardata.jsx";
 
 
 
@@ -41,7 +43,7 @@ const router = createHashRouter([
 
   {
     path: "/cars",
-    element: <cars />,
+    element: <Cardata />,
     errorElement: <ErrorPage />,
 
   },
@@ -65,6 +67,12 @@ const router = createHashRouter([
   {
     path: "/signup",
     element: <Signup />,
+    errorElement: <ErrorPage />,
+
+  },
+  {
+    path: "/booking",
+    element: <Booking />,
     errorElement: <ErrorPage />,
 
   },

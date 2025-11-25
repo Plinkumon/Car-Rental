@@ -21,6 +21,7 @@ function Navbar1() {
           <Nav>
             <Nav.Link href="#home">Home</Nav.Link>
             <NavDropdown title="Cars" id="basic-nav-dropdown">
+              <Link to='/cars'>All Cars</Link>
               <NavDropdown.Item href="#action/3.1">Economy</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Compact
