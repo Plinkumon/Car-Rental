@@ -13,7 +13,7 @@ import About from "./Components/About.jsx";
 import Home1 from "./Components/Home1.jsx";
 import Contact from "./Components/Contact.jsx";
 import Indcar from "./Components/Indcar.jsx";
-import Login from "./Components/login.jsx";
+import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
 
 
