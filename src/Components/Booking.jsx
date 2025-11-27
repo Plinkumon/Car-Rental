@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import "./Booking.css";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 
 function Booking() {
-  const [submitted, setSubmitted] = useState(false);
-
+  
+const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+
+      navigate("/success",{
+  state: { message: "Your car has been booked!!" }
+});
+    
   };
 
   return (
@@ -28,20 +33,27 @@ function Booking() {
           <h2>Send Us a Message</h2>
 
           <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="text" placeholder="Phone Number" />
-            <input type="text" name="pickup_place" className="pickup_place" placeholder="Pickup Place" />
-<input type="text" class="form-control" id="eventDateTime" name="eventDateTime"  placeholder="Date and Time" /> 
+             <div className="form-row mb-2">
+    <div className="col m-2">
+      <input type="text" className="form-control" placeholder="Full name"/>
+    </div>
+    <div className="col m-2">
+      <input type="text" className="form-control" placeholder="Your Location"/>
+    </div>
+  </div>
+  <div className="form-row mb-2">
+    <div className="col m-2">
+      <input type="text" className="form-control" placeholder="Date & Time"/>
+    </div>
+    <div className="col m-2">
+      <input type="text" className="form-control" placeholder=" No. of Days"/>
+    </div>
+  </div><br />
             <button type="submit">Lets Drive </button>
           </form>
 
-          {/* Show Thank You Message */}
-          {submitted && (
-            <p className="thank-you">
-              ✅ Thank you for contacting us! We will get back to you soon.
-            </p>
-          )}
+         
+          
         </div>
       </div>
       

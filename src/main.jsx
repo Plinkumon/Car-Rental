@@ -17,6 +17,7 @@ import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
 import Booking from "./Components/Booking.jsx";
 import Cardata from "./Components/Cardata.jsx";
+import Success from "./Components/Success.jsx";
 
 
 
@@ -24,64 +25,75 @@ import Cardata from "./Components/Cardata.jsx";
 const router = createHashRouter([
   {
     path: "/",
-    element: <Root/>,
-     errorElement: <ErrorPage />,
-     
-  },
-
-
-  {
-    path: "/home",
-     element: <Home1 />,
-    errorElement: <ErrorPage />
-  },
-  {
-    path: "/about",
-    element: <About />,
-    errorElement: <ErrorPage />
-  },
-
-  {
-    path: "/cars",
-    element: <Cardata />,
+    element: <Root />,
     errorElement: <ErrorPage />,
 
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-    errorElement: <ErrorPage />,
+    children: [
 
-  },
-  {
-    path: "/cars/:id",
-    element: <Indcar/>,
-    errorElement: <ErrorPage />
-  },
-   {
-    path: "/login",
-    element: <Login />,
-    errorElement: <ErrorPage />,
 
-  },
-  {
-    path: "/signup",
-    element: <Signup />,
-    errorElement: <ErrorPage />,
+      {
+        path: "/home",
+        element: <Home1 />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/about",
+        element: <About />,
+        errorElement: <ErrorPage />
+      },
 
-  },
-  {
-    path: "/booking",
-    element: <Booking />,
-    errorElement: <ErrorPage />,
+      {
+        path: "/cars",
+        element: <Cardata />,
+        errorElement: <ErrorPage />,
 
-  },
-  
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+        errorElement: <ErrorPage />,
 
-]);
+      },
+      {
+  path: "/cars/:type",
+  element: <Cardata />,
+},
+      {
+        path: "/cars/:id",
+        element: <Indcar />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: "/login",
+        element: <Login />,
+        errorElement: <ErrorPage />,
+
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+        errorElement: <ErrorPage />,
+
+      },
+      {
+        path: "/booking",
+        element: <Booking />,
+        errorElement: <ErrorPage />,
+
+      },
+      {
+        path: "/success",
+        element: <Success />,
+        errorElement: <ErrorPage />,
+
+      }]
+
+    }
+    ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+export default router;

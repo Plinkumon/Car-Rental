@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 
 function Home1() {
+  
   return (
     
     <div
@@ -21,7 +22,8 @@ function Home1() {
     >
       {/* Hero section */}
       <div className="home-container">
-  <Navbar1/>
+ 
+
       <div
         style={{
           position: "absolute",

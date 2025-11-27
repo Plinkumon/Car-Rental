@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about-container">
 
-      {/* Hero Section */}
+    
       <div className="about-hero">
         <h1>About AutoRentz</h1>
         <p>Luxury. Style. Comfort — Redefined.</p>
@@ -16,7 +16,7 @@ function About() {
        </Link>
       </div>
 
-      {/* Content Section */}
+    
       <div className="about-content">
         <div className="about-text">
           <h2>Who We Are</h2>

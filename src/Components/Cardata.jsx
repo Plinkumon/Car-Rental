@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import cars from "../data/cars";
@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 function Cardata() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
+  const [sortOption, setSortOption] = useState("");
+  
+
 
   // Filter Cars
   const filteredCars = cars.filter((car) => {
@@ -14,10 +17,18 @@ function Cardata() {
       car.name.toLowerCase().includes(search.toLowerCase());
 
     const matchCategory =
-      category === "All" || car.category === category;
+      category === "All" || car.type === category;
 
     return matchSearch && matchCategory;
   });
+
+  if (sortOption === "popularity") {
+    filteredCars.sort((a, b) => b.popularity - a.popularity);
+  } else if (sortOption === "priceLowHigh") {
+    filteredCars.sort((a, b) => a.pricePerDay - b.pricePerDay);
+  } else if (sortOption === "priceHighLow") {
+    filteredCars.sort((a, b) => b.pricePerDay - a.pricePerDay);
+  }
 
   return (
     <div className="container my-4">
@@ -42,6 +53,18 @@ function Cardata() {
           <option value="Luxury">Luxury</option>
           <option value="SUV">SUV</option>
           <option value="Sedan">Sedan</option>
+          <option value="Hatchback">Hatchback</option>
+        </select>
+
+        <select
+          className="form-select w-25"
+          value={sortOption}
+          onChange={(e) => setSortOption(e.target.value)}
+        >
+          <option value="">Sort By</option>
+          <option value="popularity">Popularity</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
         </select>
       </div>
 
@@ -58,13 +81,17 @@ function Cardata() {
               <Card.Body>
                 <Card.Title>{car.name}</Card.Title>
                 <Card.Text>
-                  <strong>Price per Day:</strong> {car.pricePerDay} <br />
+                  <strong>From ₹</strong> {car.pricePerDay} <br />
                   <strong>Seats:</strong> {car.seats} <br />
-                  <strong>Fuel:</strong> {car.fuel}
+                  <strong>Fuel:</strong> {car.fuel}<br />
+                   <strong>Popularity: </strong> {car.popularity}
+
                 </Card.Text>
-                <Button variant="dark"><Link to="/Booking" style={{textDecoration:'none',color: 'white'}} >
+            
+                <Button variant="success"><Link to="/Booking" style={{textDecoration:'none',color: 'white'}} >
                   Book Now
                    </Link></Button>
+                 <span> <Button variant="primary">Add to Wishlist</Button></span>
               </Card.Body>
             </Card>
           ))
