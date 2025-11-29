@@ -18,6 +18,7 @@ import Signup from "./Components/Signup.jsx";
 import Booking from "./Components/Booking.jsx";
 import Cardata from "./Components/Cardata.jsx";
 import Success from "./Components/Success.jsx";
+import Wishlist from "./Components/Wishlist.jsx";
 
 
 
@@ -59,10 +60,15 @@ const router = createHashRouter([
   element: <Cardata />,
 },
       {
-        path: "/cars/:id",
+        path: "/car/:id",
         element: <Indcar />,
         errorElement: <ErrorPage />
       },
+      {
+  path: "/wishlist",
+  element: <Wishlist />,
+   errorElement: <ErrorPage />
+},
       {
         path: "/login",
         element: <Login />,

@@ -8,7 +8,8 @@ const cars = [
     pricePerDay: 4200,
     popularity: 50,
     image: "/cars/fortuner.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: false
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const cars = [
     pricePerDay: 2500,
     popularity: 85,
     image: "/cars/hondacity.jpg",
-    transmission: "Manual"
+    transmission: "Manual",
+    available: true
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ const cars = [
     pricePerDay: 3500,
     popularity: 85,
     image: "/cars/thar.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
   },
   {
     id: 4,
@@ -41,7 +44,8 @@ const cars = [
     pricePerDay: 5000,
     popularity: 95,
     image: "/cars/tesla.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: false
   },
   {
     id: 5,
@@ -52,7 +56,8 @@ const cars = [
     pricePerDay: 8500,
     popularity: 90,
     image: "/cars/bmw7.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: false
 },
 {
     id: 6,
@@ -63,7 +68,8 @@ const cars = [
     pricePerDay: 9000,
     popularity: 93,
     image: "/cars/sclass.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 7,
@@ -74,7 +80,8 @@ const cars = [
     pricePerDay: 8200,
     popularity: 91,
     image: "/cars/a8.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 8,
@@ -85,7 +92,8 @@ const cars = [
     pricePerDay: 7500,
     popularity: 94,
     image: "/cars/rangevouge.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 9,
@@ -96,7 +104,8 @@ const cars = [
     pricePerDay: 4000,
     popularity: 89,
     image: "/cars/fortuner.jpg",
-    transmission: "Manual"
+    transmission: "Manual",
+    available: true
 },
 {
     id: 10,
@@ -107,7 +116,8 @@ const cars = [
     pricePerDay: 3500,
     popularity: 88,
     image: "/cars/xuv700.png",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 11,
@@ -118,7 +128,8 @@ const cars = [
     pricePerDay: 1800,
     popularity: 86,
     image: "/cars/elevate.jpg",
-    transmission: "Manual"
+    transmission: "Manual",
+    available: true
 },
 {
     id: 12,
@@ -129,7 +140,8 @@ const cars = [
     pricePerDay: 2000,
     popularity: 77,
     image: "/cars/verna.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 13,
@@ -140,7 +152,8 @@ const cars = [
     pricePerDay: 2600,
     popularity: 89,
     image: "/cars/superb.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 14,
@@ -151,7 +164,8 @@ const cars = [
     pricePerDay: 15000,
     popularity: 98,
     image: "/cars/porsche911.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: false
 },
 {
     id: 15,
@@ -162,7 +176,8 @@ const cars = [
     pricePerDay: 18000,
     popularity: 79,
     image: "/cars/gtr.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: false
 },
 {
     id: 16,
@@ -173,7 +188,8 @@ const cars = [
     pricePerDay: 12000,
     popularity: 98,
     image: "/cars/mustang.jpeg",
-    transmission: "Manual"
+    transmission: "Manual",
+    available: false
 },
 {
     id: 17,
@@ -184,7 +200,8 @@ const cars = [
     pricePerDay: 2200,
     popularity: 87,
     image: "/cars/seltos.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 18,
@@ -195,7 +212,8 @@ const cars = [
     pricePerDay: 1200,
     popularity: 51,
     image: "/cars/baleno.jpg",
-    transmission: "Manual"
+    transmission: "Manual",
+    available: true
 },
 {
     id: 19,
@@ -206,7 +224,8 @@ const cars = [
     pricePerDay: 7000,
     popularity: 97,
     image: "/cars/minicooper.jpg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 },
 {
     id: 20,
@@ -217,7 +236,8 @@ const cars = [
     pricePerDay: 7800,
     popularity: 99,
     image: "/cars/jaguarxf.jpeg",
-    transmission: "Automatic"
+    transmission: "Automatic",
+    available: true
 }
 
 ];

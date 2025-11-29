@@ -54,6 +54,7 @@ function Navbar1() {
            
             <Nav.Link href="#about">About Us</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
+            
  <div className="nav-right">
   {username ? (
           <>
@@ -67,6 +68,9 @@ function Navbar1() {
           Sign Up
        </Link></>)}
         </div>
+        <Nav.Link as={Link} to="/wishlist">
+  ❤️ Wishlist
+</Nav.Link>
        
           </Nav>
         </Navbar.Collapse>

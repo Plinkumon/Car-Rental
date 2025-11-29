@@ -8,7 +8,22 @@ function Cardata() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [sortOption, setSortOption] = useState("");
-  
+
+
+
+ 
+
+  const addToWishlist = (car) => {
+  let list = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+  if (!list.find(item => item.id === car.id)) {
+    list.push(car);
+    localStorage.setItem("wishlist", JSON.stringify(list));
+    alert("Added to wishlist!");
+  } else {
+    alert("Already in wishlist");
+  }
+};
 
 
   // Filter Cars
@@ -73,11 +88,12 @@ function Cardata() {
         {filteredCars.length > 0 ? (
           filteredCars.map((car, index) => (
             <Card key={index} style={{ width: "22rem" }}>
+                <Link to={`/car/${car.id}`}>
               <Card.Img
                 variant="top"
                 src={car.image}
                 style={{ height: "200px", objectFit: "cover" }}
-              />
+              /></Link>
               <Card.Body>
                 <Card.Title>{car.name}</Card.Title>
                 <Card.Text>
@@ -91,7 +107,7 @@ function Cardata() {
                 <Button variant="success"><Link to="/Booking" style={{textDecoration:'none',color: 'white'}} >
                   Book Now
                    </Link></Button>
-                 <span> <Button variant="primary">Add to Wishlist</Button></span>
+                 <span> <Button variant="primary" onClick={() => addToWishlist(car)}>Add to Wishlist</Button></span>
               </Card.Body>
             </Card>
           ))
