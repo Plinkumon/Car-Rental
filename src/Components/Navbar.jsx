@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useContext} from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,10 +6,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import cars from "../data/cars";
+import { ThemeContext } from "../context/DarkLightmode";
 
 
 function Navbar1() {
   const [username, setUsername] = useState(null);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   useEffect(() => {
     const savedUser = localStorage.getItem("username");
     if (savedUser) setUsername(savedUser);
@@ -49,24 +51,39 @@ function Navbar1() {
             
           </Nav>
           <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#cars">Cars</Nav.Link>
+            
+           <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                <Nav.Link as={Link} to ="/cars">Cars</Nav.Link>
+              
            
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+        
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             
  <div className="nav-right">
-  {username ? (
-          <>
-            <span className="welcome">Welcome, {username}</span>
-            <button onClick={handleLogout} className="logout-btn">Logout</button>
-          </>
-        ) : (
-          <> <Link to="/login" className="btn btn-outline-light me-2">Login</Link>
-            <Link to="/signup" className="btn btn-warning">
-           
-          Sign Up
-       </Link></>)}
+ {username ? (
+  username !== "admin" ? (
+    <>
+      <span className="welcome" style={{ color: "white" }}>
+        Welcome, {username}
+      </span>
+      <button onClick={handleLogout} className="logout-btn">
+        Logout
+      </button>
+    </>
+  ) : (
+    // If admin is logged in, show nothing (or custom admin text)
+    <>
+     <Link to="/login" className="btn btn-outline-light me-2">Login</Link>
+    <Link to="/signup" className="btn btn-warning">Sign Up</Link>
+    </>
+  )
+) : (
+  <>
+    <Link to="/login" className="btn btn-outline-light me-2">Login</Link>
+    <Link to="/signup" className="btn btn-warning">Sign Up</Link>
+  </>
+)}
         </div>
         <Nav.Link as={Link} to="/wishlist">
   ❤️ Wishlist

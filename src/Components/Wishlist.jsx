@@ -41,7 +41,12 @@ function Wishlist() {
 
                 <Card.Body>
                   <Card.Title>{car.name}</Card.Title>
-                  <Card.Text>₹{car.price}</Card.Text>
+                  <Card.Text>
+                    <strong>Starts From : ₹{car.pricePerDay} </strong><br />
+                     <strong>Seats:</strong> {car.seats} <br />
+                  <strong>Fuel:</strong> {car.fuel}<br />
+                   <strong>Popularity: </strong> {car.popularity}
+                  </Card.Text>
  <Button variant="success"><Link to="/Booking" style={{textDecoration:'none',color: 'white'}} >
                   Book Now
                    </Link></Button>

@@ -1,11 +1,14 @@
 const bookings = [
   {
-    bookingId: 101,
-    carId: 3,
-    userName: "John",
-    userEmail: "john@gmail.com",
-    date: "2024-01-12"
-  }
+  id: 23131,
+  carName: "BMW X5",
+  userName: "John Doe",
+  location: "Bangalore",
+  pickDate: "2025-02-12",
+  dropDate: "2025-02-15",
+  status: "Pending"
+}
+
 ];
 
 export default bookings;

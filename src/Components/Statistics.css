@@ -1,0 +1,37 @@
+.statistics-section {
+  padding: 60px 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.stat-box p {
+  margin-top: 10px;
+  font-size: 16px;
+}

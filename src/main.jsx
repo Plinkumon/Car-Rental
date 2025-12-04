@@ -19,6 +19,13 @@ import Booking from "./Components/Booking.jsx";
 import Cardata from "./Components/Cardata.jsx";
 import Success from "./Components/Success.jsx";
 import Wishlist from "./Components/Wishlist.jsx";
+import ThemeProvider from "./context/DarkLightmode.jsx";
+
+import AdminHome from "./Admin/AdminHome.jsx";
+import AdminRoute from "./Routes/AdminRoute.jsx";
+import AdminDashboard from "./Admin/AdminDashboard";
+import ManageCars from "./Admin/ManageCars";
+import ManageBookings from "./Admin/ManageBookings";
 
 
 
@@ -30,7 +37,10 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
 
     children: [
-
+{
+        index: true,        // 👈 Loads Home by default
+        element: <Home1 />
+      },
 
       {
         path: "/home",
@@ -93,13 +103,30 @@ const router = createHashRouter([
         errorElement: <ErrorPage />,
 
       }]
+  },
+      {
+        path: "/admin/dashboard",
+        element: (
+          <AdminRoute>
+            <AdminDashboard />
+          </AdminRoute>
+        ),
+        children: [
+    { path: "home", element: <AdminHome /> },
+    { path: "manage-cars", element: <ManageCars /> },
+    { path: "manage-bookings", element: <ManageBookings /> },
+  ]
+      },
 
-    }
+      
+      
+
+    
     ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+ <ThemeProvider>
     <RouterProvider router={router} />
-  </React.StrictMode>
+ </ThemeProvider>
 );
 export default router;

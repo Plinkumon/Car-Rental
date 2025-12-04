@@ -38,10 +38,26 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 const username = input.uname;
+const password = input.password;
      localStorage.setItem("username", username);
+
     if (validate()) {
-      navigate("/home");
+      if (username === "admin" && password === "admin123") {
+      localStorage.setItem("user", JSON.stringify({
+        username: "admin",
+        role: "admin"
+      }));
+      navigate("/admin/dashboard/home");
+      return;
     }
+      
+      localStorage.setItem("user", JSON.stringify({
+      username: username,
+      role: "user"
+    }));
+
+    navigate("/home");
+  }
   };
 
   return (

@@ -5,12 +5,12 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div id="error-page" style={{backgroundColor: 'white', display:'flex', flexDirection: 'column', alignItems:'center', height:'400px',justifyContent:'center'}}>
       <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
+      <h3>Sorry, an unexpected error has occurred.</h3>
+      <h5 style={{color: 'red'}}>
         <i>{error.statusText || error.message}</i>
-      </p>
+      </h5>
     </div>
   );
 }

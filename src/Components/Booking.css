@@ -67,8 +67,7 @@
   border: none;
   border-radius: 5px;
   outline: none;
-    display: flex;
-  flex-direction: row;
+    
 }
 
 .booking-form button {

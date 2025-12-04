@@ -1,0 +1,77 @@
+.admin-layout {
+  display: flex;
+  height: 200vh;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #37353E;
+  color: white;
+  padding: 20px;
+}
+
+.admin-sidebar ul { padding: 0; }
+.admin-sidebar li { list-style: none; margin: 15px 0; }
+
+.admin-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px;
+  background: #f4f4f4;
+}
+
+.admin-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.delete-btn {
+  background: red;
+  padding: 6px 12px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background: green;
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  margin-right: 8px;
+}
+
+.reject-btn {
+  background: orange;
+  padding: 6px 12px;
+  color: white;
+  border: none;
+}
+.adminhome {
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 150px;
+}
