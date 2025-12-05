@@ -56,7 +56,7 @@ const password = input.password;
       role: "user"
     }));
 
-    navigate("/home");
+    navigate("/");
   }
   };
 
