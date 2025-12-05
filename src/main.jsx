@@ -19,7 +19,7 @@ import Booking from "./Components/Booking.jsx";
 import Cardata from "./Components/Cardata.jsx";
 import Success from "./Components/Success.jsx";
 import Wishlist from "./Components/Wishlist.jsx";
-import ThemeProvider from "./context/DarkLightmode.jsx";
+
 
 import AdminHome from "./Admin/AdminHome.jsx";
 import AdminRoute from "./Routes/AdminRoute.jsx";
@@ -125,8 +125,8 @@ const router = createHashRouter([
     ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
- <ThemeProvider>
+<React.StrictMode>
     <RouterProvider router={router} />
- </ThemeProvider>
+ </React.StrictMode>
 );
 export default router;
