@@ -1,4 +1,4 @@
-import React, { useEffect, useState ,useContext} from "react";
+import React, { useEffect, useState} from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,7 +11,7 @@ import { ThemeContext } from "../context/DarkLightmode";
 
 function Navbar1() {
   const [username, setUsername] = useState(null);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+
   useEffect(() => {
     const savedUser = localStorage.getItem("username");
     if (savedUser) setUsername(savedUser);
